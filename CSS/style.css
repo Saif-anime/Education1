@@ -1,0 +1,143 @@
+/* google font import here  */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fredoka+One&display=swap');
+
+
+/* css reset here  */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* css variable  */
+:root{
+    --font1:'DM Sans', sans-serif;
+    --font2:'Fredoka One', cursive;
+}
+html{
+    font-family: var(--font2);
+}
+
+/* navbar  */
+
+nav, a{
+    font-family: var(--font2) !important;
+}
+header{
+    z-index: 999999;
+}
+/* banner is here  */
+.banner{
+    width: 100%;
+    height: 90vh;
+    display: block;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+}
+.banner::before{
+    content: "";
+    background-image: url(../IMG/banner.webp);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 88px;
+    background-size: 100% 90%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.banner div{
+    top: 10em;
+    left: 10em;
+    background: white;
+    padding: 50px 50px;
+    border-radius: 85px;
+}
+.banner div h1{
+    font-family: var(--font2);
+    font-size: 6em;
+    line-height: 1em;
+}
+.banner div h3{
+    font-family: var(--font2);
+    font-size: 3em;
+    line-height: 2em;
+}
+
+/* feature section is here  */
+.feature{
+    top: 50em;
+}
+.text{
+    width: 75%;
+    margin-top: 7em;
+    margin-bottom: 5em;
+}
+.text h2{
+    font-size: 2.5em;
+    font-family: var(--font2);
+}
+.text p{
+    font-size: 1.2em;
+    font-family: var(--font1);
+}
+.card{
+    justify-content: center;
+    align-items: center;
+}
+.card h5{
+    font-family: var(--font2);
+    font-size: 1.5em;
+}
+.card p{
+    font-family: var(--font1);
+}
+/* class offers  */
+.class_offer{
+    top: 110em;
+}
+.class_offer::before{
+    content: "";
+    background-image: url('../IMG/section_bg2.webp');
+    width: 100%;
+    height: 120%;
+    position: absolute;
+    z-index: -1;
+}
+.box{
+    border-radius: 2em;
+    display: inline-block;
+    background: white;
+    width: 20vw;
+    height: 60vh;
+    overflow: hidden;
+}
+.content{
+    padding: 1em 0.6em;
+}
+.content h5{
+    font-size: 1.4em;
+    font-family: var(--font2);
+    margin-bottom: 0.5em;
+}
+.content p{
+    font-size: 1.1em;
+    text-align: left;
+    font-family: var(--font1);
+    margin-bottom: 0.8em;
+}
+.content button{
+    border-radius: 3em;
+}
+.owl-slider{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.wrapper{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
